@@ -1,0 +1,617 @@
+/*Empieza la maquetación de la página*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*
+Fuentes importadas
+font-family: 'Lora', serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Shadows Into Light', cursive;
+*/
+body {
+    /*background-image: url(../img/BGwallpp.jpg);*/
+    background: #1e1b1b;
+}
+
+#contenedor {
+    background: #1e1b1b;
+    border-radius: 1.3em;
+    width: 780px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Comeinza la cabecera de la página*/
+
+header {
+    /*height: 100px;*/
+    height: 10vh;
+    min-height: 70px;
+    display: flex;
+}
+
+header .logo {
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    padding-left: 15px;
+}
+
+header .nombre {
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(to right, #dea4a3, #f1dbb1, #fea68e);
+	
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    color: transparent;
+    text-align: end;
+    padding-right: 10%;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+nav {
+    /*height: 40px;*/
+    display: flex;
+    width: 780px;
+    word-spacing: 4px;
+    height: 5vh;
+    min-height: 40px;
+    background: linear-gradient(to left, rgba(57, 106, 252, 0.1),rgba(41, 72, 255, .2));
+    text-align: center;
+    padding-left: 18%;
+}
+
+nav .navegacion {
+    border: 1px solid white;
+    width: 100px;
+    height: 100%;
+    padding-top: 10px;
+    background: none;
+}
+
+nav .navegacion:hover {
+    border: 1px solid white;
+    width: 100px;
+    padding-top: 10px;
+    background-color: rgba(0,0,0,.30);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav #doble {
+    padding-top: 1px;
+}
+
+/*Comienza el pegado de la cabecera + nav al principio*/
+
+.pegado {
+    position: fixed;
+    min-height: 100px;
+    width: 780px;
+    word-wrap: break-word;
+    z-index: 98;
+    background-image: url(../img/Fondo\ 1.jpg);
+}
+
+/*Reyeno de espacio libre que deja el pegado*/
+
+.espacio {
+    height: 10em;
+    position: relative;
+    overflow: hidden;
+    z-index: 97;
+}
+
+/*Comeinza el banner de la página*/
+
+#banner {
+    position: relative;
+    /*height: 550px;*/
+    height: 85vh;
+    min-height: 600px;
+    top: 15vh;
+    background-image: url(../img/Banner\ 3.png);
+    background-image: no-repeat;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 97;
+}
+
+/*CSS del botón en el banner*/
+
+#banner .solicite {
+    border: 1px solid rgb(242, 187, 187);
+    border-radius: 2em;
+    /*background: rgba(242, 187, 187,0.1);*/
+    background-image: url(../img/Fondo\ 1.jpg);
+    width: 7.5em;
+    height: 4em;
+    text-align: center;
+    padding-top: 8px;
+    margin-left: 38em;
+    margin-top: 23em;
+}
+
+#banner .solicite:hover {
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(242, 187, 187,0.4);
+    width: 7.5em;
+    height: 4em;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#banner .solicite a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/*Comienza el apartado de ofertas de la página*/
+
+#oferta {
+    background: #1e1b1b;
+    /*background-image: url(../img/Banner\ 3.png);*/
+    background-image: no-repeat;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 120px;
+    padding-left: 1em;
+    height: 600px;
+}
+
+.texto {
+    border: 1px solid #464343;
+    border-radius: 0.5em;
+    background-image: linear-gradient(to right, #dea4a3, #f1dbb1, #fea68e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    height: 27%;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 2em;
+    font-size: 2em;
+    margin-top: 3.8em;
+    margin-right: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+.ofertas1, .ofertas2, .ofertas3 {
+    border: 1px solid #464343;
+    border-radius: 1em;
+    background: #221e1e;
+    display: inline-block;
+    width: 32%;
+    margin-right: 0.19em;
+    height: 69%;
+    text-align: center;
+    padding: 0.4em;
+    padding-top: 1em;
+    overflow: hidden;
+    color: white;
+}
+
+.oferta {
+    background-image: linear-gradient(to right, #77f0f5, #2ef2a7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.4em;
+}
+
+.img{
+    height: 10em;
+    border: 1px solid #464343;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+/*Botones de ofertas*/
+
+.btn_oferta {
+    border: 1px solid #a18c5e;
+    border-radius: 1em;
+    margin-left: 4.8em;
+    cursor: pointer;
+    width: 5em;
+}
+
+.btn_oferta a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.btn_oferta:hover {
+    background: #fea68e;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/*Comienza el apartado de precios*/
+
+#precio, #precio2 {
+    margin-top: 7em;
+    height: 300px;
+    text-align: center;
+}
+
+#precio h1 {
+    font-size: 30px;
+    background-image: linear-gradient(to right, #dea4a3, #f1dbb1, #fea68e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#precio img {
+    border: 1px solid wheat;
+    width: 240px;
+    height: 300px;
+    margin-right: 25em;
+    display: inline-block;
+}
+
+.contenido1 {
+    position: relative;
+    left: 10em;
+    top: -19em;
+    padding: 1em;
+    width: 430px;
+    color: white;
+    display: inline-block;
+}
+
+/*Aquí montamos los botones de los catálogos y de pedir*/
+
+.btn_catalogo1, .btn_catalogo2, .btn_precio {
+    border: 1px solid #a18c5e;
+    border-radius: 1em;
+    margin-left: 4.8em;
+    cursor: pointer;
+    margin: 2em;
+    padding: 0.6em;
+    width: 8em;
+    height: 4em;
+}
+
+.btn_catalogo1, .btn_catalogo2 {
+    display: inline-block;
+}
+
+.btn_catalogo1 a, .btn_catalogo2 a, .btn_precio a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_catalogo1:hover, .btn_catalogo2:hover, .btn_precio:hover {
+    background: #fea68e;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.btn_precio {
+    margin-left: 8.3em;
+}
+
+
+#precio2 h1 {
+    font-size: 30px;
+    background-image: linear-gradient(to right, #dea4a3, #f1dbb1, #fea68e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#precio2 img {
+    border: 1px solid wheat;
+    width: 240px;
+    height: 300px;
+    margin-right: 25em;
+    display: inline-block;
+}
+
+/*Comeinza el apartado de la ubicación del local*/
+
+#ubicacion {
+    height: 700px;
+    padding-left: 1em;
+}
+
+#ubicacion .texto {
+    padding-top: 1.3em;
+    margin-bottom: 0.7em;
+    height: 4em;
+}
+
+#ubicacion .iframe {
+    border: 2px solid #dea4a3;
+    background: white;
+    margin-left: 4.5em;
+    margin-right: 6em;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+/*Comeinza la galería de imágenes*/
+
+#galeria {
+    border: 1px solid #dea4a3;
+    border-radius: 1em;
+    overflow: hidden;
+    margin-left: 6em;
+    margin-bottom: 2em;
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+#galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+#galeria img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*Comeienza el apartado de sobre nosotros*/
+
+#nosotros {
+    position: relative;
+    background-image:url(../img/Fondo\ 2.blanco.jpg);
+    background-image: no-repeat;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 145px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 900;
+    height: 600px;
+    text-align: center;
+}
+
+#nosotros h1 {
+    padding-left: 110px;
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: rgb(241, 142, 142);
+    font-family: 'Permanent Marker', cursive;
+}
+
+#nosotros p {
+    padding-left: 200px;
+    padding-right: 70px;
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    font-family: 'roboto slab', sans-serif;
+}
+
+/*Comienza el pie de página*/
+
+footer {
+    height: 440px;
+}
+
+.footer-text {
+    display: block;
+    width: 760px;
+    margin-left: 10px;
+    height: 380px;
+}
+
+.rs img {
+    width: 30px;
+    height: 30px;
+    margin-left: .8em;
+    cursor: pointer;
+}
+
+.box1, .box2, .box3{
+    display: inline-block;
+    width: 30%;
+    height: 20em;
+    margin-left: 1em;
+    padding: 1em;
+}
+
+.box1 h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.box1 p {
+    text-align: center;
+    background-image: linear-gradient(to right, #c0ec45, #fd5656);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1em;
+}
+
+.box2 h3 {
+    color: #dea4a3;
+    text-align: left;
+    margin-bottom: .6em;
+}
+
+.box2 a {
+    text-decoration: none;
+    color: #f1dbb1;
+}
+
+.box2 a:hover {
+    text-decoration: underline;
+    color: #f1dbb1;
+}
+
+.box3 h2 {
+    color: #c0ec45;
+    text-align: center;
+    margin-bottom: .6em;
+}
+
+.box3 p {
+    color: white;
+    text-align: center;
+    margin-bottom: .6em;
+}
+
+.mail {
+    background: linear-gradient(to left, rgba(141, 245, 207, 1),rgb(248, 248, 248));;
+    width: 14em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: black;
+}
+
+.send {
+    width: 10em;
+    margin-left: 2.3em;
+    background: linear-gradient(to left, rgba(146, 170, 243, 0.7),rgba(145, 255, 180, 0.7));;
+    text-align: center;
+    color: #e5f014;
+}
+
+.send {
+    width: 10em;
+    margin-left: 2.3em;
+    background: linear-gradient(to left, rgba(146, 170, 243, 0.7),rgba(145, 255, 180, 0.7));;
+    text-align: center;
+    color: #e5f014;
+    cursor: pointer;
+}
+
+.pie {
+    text-align: center;
+    color: rgb(181, 178, 178);
+}
+
+/*Comeinza el css de bibliografía*/
+
+.enlaces {
+    text-align: center;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: white;
+}
+
+.enlaces a:hover {
+    text-decoration: underline;
+    color: #77f0f5;
+}
+
+/*Comienza el cuadro de cookies*/
+
+.aviso-cookies {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    line-height: 150%;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    padding-top: 70px;
+    box-sizing: 0px 2px 20px 10px rgba(222,222,222,.25);
+    text-align: center;
+}
+
+.aviso-cookies .galleta {
+    max-width: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.aviso-cookies .titulo, .parrafo{
+    margin-bottom: 15px;
+}
+
+.aviso-cookies .boton {
+    width: 100%;
+    background: #595959;
+    border: none;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3 ease all;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.aviso-cookies .boton:hover {
+    background: black;
+}
+
+.aviso-cookies .enlace {
+    color: #4DBFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+    text-decoration: underline;
+}
+
+.fondo-aviso-cookies {
+    display: none;
+    background: rgba(0,0,0,.30);
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.activo {
+    display: block;
+}
